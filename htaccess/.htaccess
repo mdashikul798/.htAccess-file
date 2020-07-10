@@ -1,0 +1,18 @@
+RewriteEngine on
+RewriteBase /htaccess/
+
+#Below code is for "ReNaming the URL" (what ever can be write at url, it will go index)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+#Defining which file will load first
+#DirectoryIndex home.php index.php
+
+#Excessing the errors pages
+#ErrorDocument 400 http://localhost/htaccess/errors/400.php
+#ErrorDocument 401 http://localhost/htaccess/errors/401.php
+#ErrorDocument 404 http://localhost/htaccess/errors/404.php
+#ErrorDocument 403 http://localhost/htaccess/errors/403.php
+
+Options -Indexes
